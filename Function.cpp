@@ -144,6 +144,20 @@ bool higher_than_ten( int number_to_evalueate )
 	}
 }
 
+bool alphabetical( char character_one, char character_two )	//Aim Should return true if letters are passed in alphabetical order.
+{
+	if( int( character_one ) < int ( character_two ) )	//If the second value inputted has more ascii value than the first.
+	{
+		return true;	//Then do this
+	}
+
+	else
+	{
+		return false;
+	}
+}
+
+
 int main()
 {
 	//impliment 5 functions based on recipies 
