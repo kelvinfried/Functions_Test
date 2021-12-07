@@ -92,7 +92,7 @@ void fire_until_empty()	//Uses the above functions to creat a sudo gun firing cy
 	
 	for( int x = 0; x < ammo_value; x++ )
 	{
-		std::cout<< x;
+		//std::cout<< x;
 		fire_bullet();
 	}
 	
@@ -119,7 +119,7 @@ int main()
 	
 	//Step 2	
 		//Write a function called firebullet.
-	fire_until_empty();
+	fire_until_empty();	//Step 3- From here
 	
 	return 0;
 }
