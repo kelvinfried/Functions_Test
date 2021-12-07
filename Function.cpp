@@ -18,11 +18,23 @@ void prepair_food( )
 	std::cout<< "To prepair your food, you need to" << std::endl;
 	std::cout<< "You need a frying pan, oil and salt. << std::endl << "Now oil up the pan" << std::endl;
 }
+	//Updating to include attributes t o fit with the food being cooked at the time
+void prepair_food( std::string food_name )
+{
+	std::cout<< "To prepair your food, you need to" << std::endl;
+	std::cout<< "You need a frying pan, oil and salt." << std::endl << "Now oil up the pan" << std::endl;
+}
 
 	//Finish food
 void finish_food( )
 {
 	std::cout<< "Now take the food out and serve it on a plate" << std::endl;
+}
+
+	//Now to update the cook food function to include the prepair and finish food functions
+void cook_food( std::string food_name, int cooking_temperature, int cooking_time )
+{
+	
 }
 
 void cook_dinner()
