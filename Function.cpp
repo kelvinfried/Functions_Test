@@ -2,10 +2,10 @@
 #include <iostream>
 
 //Program Functions
-void cook_food( string food_name, int cooking_temperature, int cooking_time )
+void cook_food( std::string food_name, int cooking_temperature, int cooking_time )
 {
 	std::cout<< "We will be cooking the food " << food_name << " item." << std::endl;
-	std::cout<< "Add the " << food_name << " to the pan, at " << cooking_temperature << std:endl;
+	std::cout<< "Add the " << food_name << " to the pan, at " << cooking_temperature << std::endl;
 	std::cout<< "The " << food_name << " must cook for " << cooking_time << std::endl;
 }
 
