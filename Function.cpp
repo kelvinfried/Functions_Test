@@ -84,11 +84,13 @@ void out_of_bullets()
 }
 
 void fire_until_empty()	//Uses the above functions to creat a sudo gun firing cycle
-
 {
+	//Initialise an ammo value;
+	int ammo_value = 15;
+	
 	std::cout<< "Enemy spotted!" << std::endl;
 	
-	for( int x = 0; x < 10; x++ )
+	for( int x = ammo_value; x > ammo_value; x-- )
 	{
 		fire_bullet();
 	}
