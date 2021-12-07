@@ -69,13 +69,14 @@ int main()
 	cook_food( "Steak", 240, 5 );
 	
 	//Cook Dinner Function
+	std::cout<< "" << std::endl;
 	std::cout<< "Cook Dinner functions" << std::endl;
 	
 		//Cook dinner will be used to call these functions
-	std::cout<< "Cook Steak" << std::endl;
+	/*std::cout<< "Cook Steak" << std::endl;
 	std::cout<< "Cook Omelette" << std::endl;
 	std::cout<< "Cook Mushrooms" << std::endl;
-	std::cout<< "Cook Peas" << std::endl;
+	std::cout<< "Cook Peas" << std::endl;*/
 	
 	return 0;
 }
