@@ -199,6 +199,12 @@ int main()
 	//std::cout<< "The value returned is " << higher_than_ten( 111 ) << std::endl;	//Should be more than 10
 	
 	//Step 7
+		//Testing function
+	alphabetical( 'a', 'b' );
+	
+	std::cout<< "If a and b are alphabetical " << alphabetical( 'a', 'b' ) << " it will return 0." << std::endl; 
+	std::cout<< "If v and a are alphabetical " << alphabetical( 'v', 'a' ) << " it will return 0." << std::endl; 
+	
 	
 	return 0;
 }
