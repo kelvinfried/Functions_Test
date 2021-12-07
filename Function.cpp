@@ -83,6 +83,19 @@ void out_of_bullets()
 	std::cout<< "You can no longer fire" << std::endl;
 }
 
+void fire_until_empty()
+{
+	std::cout<< "Enemy spotted!" << std::endl;
+	
+	for( int x = 0; x > 10; x++ )
+	{
+		fire_bullet();
+	}
+	
+	reload();
+}
+
+
 int main()
 {
 	//impliment 5 functions based on recipies 
