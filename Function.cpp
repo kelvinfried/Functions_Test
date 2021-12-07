@@ -18,6 +18,8 @@ void cook_dinner()
 int main()
 {
 	//impliment 5 functions based on recipies 
+		//Testing phase
+	cook_food( "Steak", 240, 5 );
 	
 	//Cook Dinner Function
 	std::cout<< "Cook Dinner functions" << std::endl;
