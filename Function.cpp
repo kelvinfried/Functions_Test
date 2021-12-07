@@ -109,10 +109,26 @@ void say_hello( int num_time, char initial )	//Adding in another attribute  for 
 }
 
 
-void spawn_player( std::string name, float x_coorodinate, float y_coorodinate, float z_coordinate )
+void spawn_player( std::string name, float x_coorodinate, float y_coorodinate, float z_coordinate )	//Used to spawn the player in a rudamentory way
 {
 	std::cout<< "The player's name is " << name << ", you have spawned at" ;
 	std::cout<< "( " << x_coorodinate << ", " << y_coorodinate << ", " << z_coordinate << " )" << std::endl;
+}
+
+void spawn_all_players()	//To spawn 5 players with random vairables
+{
+	//player 1 - 5
+	spawn_player( "Name 1", 0.0f, 1.2f, 0.2f );
+	spawn_player( "Name 2", 2.0f, 0.0f, 1.0f );
+	spawn_player( "Name 3", 0.0f, 0.5f, 3.0f );
+	spawn_player( "Name 4", 5.0f, 30.0f, 0.0f );
+	spawn_player( "Name 5", 0.1f, 0.0f, 7890.0f );
+}
+
+void start_game()	//Spawns all the players in another function with an additional output
+{
+	std::cout<< "Get ready" << std::endl;
+	spawn_all_players();
 }
 
 int main()
@@ -143,7 +159,10 @@ int main()
 	//say_hello( 2, 'K' );	//Now needs to be ammeneded so the parameter is passed into the function
 	
 	//Step 5
-	spawn_player( "Default Name", 0.0f, 0.0f, 0.0f );
+	//spawn_player( "Default Name", 0.0f, 0.0f, 0.0f );
+	//spawn_all_players();	//Now to test the output of the spawn all players function
+	start_game();
+	
 	
 	
 	return 0;
