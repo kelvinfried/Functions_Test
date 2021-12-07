@@ -131,6 +131,19 @@ void start_game()	//Spawns all the players in another function with an additiona
 	spawn_all_players();
 }
 
+bool higher_than_ten( int number_to_evalueate )
+{
+	if( number_to_evalueate > 10 )	//If number is more than 10
+	{
+		return true;
+	}
+	
+	else	//If the number is less than 10
+	{
+		return false;
+	}
+}
+
 int main()
 {
 	//impliment 5 functions based on recipies 
@@ -163,7 +176,7 @@ int main()
 	//spawn_all_players();	//Now to test the output of the spawn all players function
 	start_game();
 	
-	//Steps 6
+	//Step 6
 	
 	
 	
