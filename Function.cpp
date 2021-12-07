@@ -184,6 +184,7 @@ int main()
 	
 	std::cout<< "The value returned is " << higher_than_ten( 111 ) << std::endl;	//Should be more than 10
 	
+	//Step 7
 	
 	return 0;
 }
