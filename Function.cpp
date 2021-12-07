@@ -69,21 +69,22 @@ void cook_dinner()
 //Step 2 functions
 void fire_bullet()
 {
-	std::cout<< "Bullet fired" << std::endl;
+	std::cout<< "Bullet fired" << std::endl;	//Outputs that a gun has been fired
 }
 
 void reload()
 {
-	std::cout<< "Take out a new magazine from your backpack" << std::endl;
+	std::cout<< "Take out a new magazine from your backpack" << std::endl;	//When the user reloads the gun
 	std::cout<< "Put the new magazine in your gun" << std::endl;
 }
 
 void out_of_bullets()
 {
-	std::cout<< "You can no longer fire" << std::endl;
+	std::cout<< "You can no longer fire" << std::endl;	//Displayed when the user is out of bullets to fire
 }
 
-void fire_until_empty()
+void fire_until_empty()	//Uses the above functions to creat a sudo gun firing cycle
+
 {
 	std::cout<< "Enemy spotted!" << std::endl;
 	
