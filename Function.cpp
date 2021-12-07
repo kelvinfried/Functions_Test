@@ -179,7 +179,7 @@ int main()
 	//Step 6
 		//Testing function
 	higher_than_ten( 10 );	//Should be less than 10
-		//Outputting the value of the boolean value to see if it was true ( !0 ) or false ( 0 )
+		//Outputting the value of the boolean value to see if it was true ( 0 ) or false ( !0 )	//Amded this
 	std::cout<< "The value returned is " << higher_than_ten( 10 ) << std::endl;
 	
 	std::cout<< "The value returned is " << higher_than_ten( 111 ) << std::endl;	//Should be more than 10
