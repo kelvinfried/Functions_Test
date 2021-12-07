@@ -174,7 +174,7 @@ int main()
 	//Step 5
 	//spawn_player( "Default Name", 0.0f, 0.0f, 0.0f );
 	//spawn_all_players();	//Now to test the output of the spawn all players function
-	start_game();
+	//start_game();
 	
 	//Step 6
 		//Testing function
