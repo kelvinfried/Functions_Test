@@ -100,6 +100,11 @@ void fire_until_empty()	//Uses the above functions to creat a sudo gun firing cy
 }
 
 
+void say_hello( int num_time )
+{
+	std::cout<< "hello" << std::endl;
+}
+
 int main()
 {
 	//impliment 5 functions based on recipies 
@@ -119,7 +124,14 @@ int main()
 	
 	//Step 2	
 		//Write a function called firebullet.
-	fire_until_empty();	//Step 3- From here
+	//fire_until_empty();	//Step 3- From here
+	
+	//Step 4
+		//Write a function called sayhello()
+	//say_hello();	//Testing that the function works
+	say_hello( 1 );	//Now needs to be ammeneded so the parameter is passed into the function
+	
+	
 	
 	return 0;
 }
