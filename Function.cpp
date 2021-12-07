@@ -61,9 +61,9 @@ void cook_dinner()
 	std::cout<< "" << std::endl;
 	std::cout<< "Cooking food function" << std::endl;
 	
-	cook_food( steak, 240, 5 );
-	cook_food( omelette, 200, 7 );
-	cook_food( mushrooms, 200, 3 );
+	cook_food( "steak", 240, 5 );
+	cook_food( "omelette", 200, 7 );
+	cook_food( "mushrooms", 200, 3 );
 }
 
 int main()
