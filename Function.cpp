@@ -104,7 +104,7 @@ void say_hello( int num_time, char initial )	//Adding in another attribute  for 
 {
 	for( int x = 0; x < num_time; x++ )
 	{
-		std::cout<< "hello, Mr/Mrs " << initial << std::e6ndl;
+		std::cout<< "hello, Mr/Mrs " << initial << std::endl;	//Fixed syntax error on the endl
 	}
 }
 
@@ -132,7 +132,8 @@ int main()
 	//Step 4
 		//Write a function called sayhello()
 	//say_hello();	//Testing that the function works
-	say_hello( 1 );	//Now needs to be ammeneded so the parameter is passed into the function
+	//say_hello( 1 );	//Now needs to be ammeneded so the parameter is passed into the function
+	say_hello( 2, 'K' );	//Now needs to be ammeneded so the parameter is passed into the function
 	
 	
 	
