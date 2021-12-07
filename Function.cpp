@@ -5,19 +5,22 @@
 	//Used for cooking food items, you pass in data to the attributes
 		//The arguements define what food is cooking and how long and at what temp it cooks at
 		//Nothing returned
-void cook_food( std::string food_name, int cooking_temperature, int cooking_time )
+		//Just a note any redefinitions are commented out
+/*void cook_food( std::string food_name, int cooking_temperature, int cooking_time )
 {
 	std::cout<< "We will be cooking the food " << food_name << " item." << std::endl;
 	std::cout<< "Add the " << food_name << " to the pan, at " << cooking_temperature << " 'C" << std::endl;
 	std::cout<< "The " << food_name << " must cook for " << cooking_time << std::endl;
-}
+}*/
+
 
 	//Prepair dish function
-void prepair_food( )
+/*void prepair_food( )
 {
 	std::cout<< "To prepair your food, you need to" << std::endl;
-	std::cout<< "You need a frying pan, oil and salt. << std::endl << "Now oil up the pan" << std::endl;
-}
+	std::cout<< "You need a frying pan, oil and salt." << std::endl << "Now oil up the pan" << std::endl;
+}*/
+
 	//Updating to include attributes t o fit with the food being cooked at the time
 void prepair_food( std::string food_name )
 {
@@ -27,10 +30,11 @@ void prepair_food( std::string food_name )
 
 
 	//Finish food
-void finish_food( std::string food_name )
+/*void finish_food( std::string food_name )
 {
 	std::cout<< "Now take the food out and serve it on a plate" << std::endl;
-}
+}*/
+
 	//Updates for the use of attributes
 void finish_food( std::string food_name )
 {
@@ -42,11 +46,13 @@ void finish_food( std::string food_name )
 void cook_food( std::string food_name, int cooking_temperature, int cooking_time )
 {
 	prepair_food( food_name );
+	std::cout<< "" << std::endl;
 	
 	std::cout<< "We will be cooking the food " << food_name << " item." << std::endl;
 	std::cout<< "Add the " << food_name << " to the pan, at " << cooking_temperature << " 'C" << std::endl;
 	std::cout<< "The " << food_name << " must cook for " << cooking_time << std::endl;
 	
+	std::cout<< "" << std::endl;
 	finish_food( food_name );
 }
 
