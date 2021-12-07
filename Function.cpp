@@ -214,7 +214,8 @@ int main()
 	//std::cout<< "If a and a are alphabetical " << alphabetical( 'a', 'a' ) << std::endl << "it will return 1." << std::endl; //As expected returns false
 	
 	//step 8
-	std::cout<< "The first value is 0' and it's radiant is " << deg_to_rad( 0.0f ) << std::endl;
+	std::cout<< "The first value is 0' and it's radiant is " << deg_to_rad( 0.0f ) << std::endl;	//Working fine
+	std::cout<< "The first value is 30' and it's radiant is " << deg_to_rad( 30.0f ) << std::endl;	//
 	
 	return 0;
 }
