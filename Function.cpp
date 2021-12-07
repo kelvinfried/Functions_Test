@@ -193,7 +193,7 @@ int main()
 	//Step 6
 		//Testing function
 	//higher_than_ten( 10 );	//Should be less than 10
-		//Outputting the value of the boolean value to see if it was true ( 0 ) or false ( !0 )	//Amded this
+		//Outputting the value of the boolean value to see if it was true ( 1 ) or false ( 0 )	//Amded this
 	//std::cout<< "The value returned is " << higher_than_ten( 10 ) << std::endl;	//As expected returns false as it is not more than 10, but equal
 	
 	//std::cout<< "The value returned is " << higher_than_ten( 111 ) << std::endl;	//Should be more than 10
@@ -202,8 +202,11 @@ int main()
 		//Testing function
 	alphabetical( 'a', 'b' );
 	
-	std::cout<< "If a and b are alphabetical " << alphabetical( 'a', 'b' ) << " it will return 0." << std::endl; 
-	std::cout<< "If v and a are alphabetical " << alphabetical( 'v', 'a' ) << " it will return 0." << std::endl; 
+	std::cout<< "If a and b are alphabetical " << alphabetical( 'a', 'b' ) << std::endl << "it will return 1." << std::endl; //Had to ammend the values for boolean values returned as I has mistaken that 0 was true and 1 was true.// ammended
+	std::cout<< "If v and a are alphabetical " << alphabetical( 'v', 'a' ) << std::endl << "it will return 1." << std::endl; 
+		//Whne equal
+	std::cout<< "If a and a are alphabetical " << alphabetical( 'a', 'a' ) << std::endl << "it will return 1." << std::endl; //As expected returns false
+	
 	
 	
 	return 0;
