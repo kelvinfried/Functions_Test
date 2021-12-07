@@ -215,7 +215,8 @@ int main()
 	
 	//step 8
 	std::cout<< "The first value is 0' and it's radiant is " << deg_to_rad( 0.0f ) << std::endl;	//Working fine
-	std::cout<< "The first value is 30' and it's radiant is " << deg_to_rad( 30.0f ) << std::endl;	//
+	std::cout<< "The first value is 30' and it's radiant is " << deg_to_rad( 30.0f ) << std::endl;	//working fine
+	std::cout<< "The first value is 120' and it's radiant is " << deg_to_rad( 120.0f ) << std::endl;	//working fine
 	
 	return 0;
 }
