@@ -101,12 +101,12 @@ int main()
 {
 	//impliment 5 functions based on recipies 
 		//Testing phase
-	cook_food( "Steak", 240, 5 );
+	//cook_food( "Steak", 240, 5 );
 	
 	//Cook Dinner Function
 	std::cout<< "" << std::endl;
 	//std::cout<< "Cook Dinner functions" << std::endl;
-	cook_dinner();
+	//cook_dinner();
 	
 		/*//Cook dinner will be used to call these functions
 	std::cout<< "Cook Steak" << std::endl;
@@ -116,6 +116,7 @@ int main()
 	
 	//Step 2	
 		//Write a function called firebullet.
+	fire_until_empty();
 	
 	return 0;
 }
