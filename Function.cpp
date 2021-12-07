@@ -27,7 +27,6 @@ int main()
 	std::cout<< "Cook Omelette" << std::endl;
 	std::cout<< "Cook Mushrooms" << std::endl;
 	std::cout<< "Cook Peas" << std::endl;
-	std::cout<< "Cook Peas" << std::endl;
 	
 	return 0;
 }
