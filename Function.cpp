@@ -60,6 +60,10 @@ void cook_dinner()
 {
 	std::cout<< "" << std::endl;
 	std::cout<< "Cooking food function" << std::endl;
+	
+	cook_food( steak, 240, 5 );
+	cook_food( omelette, 200, 7 );
+	cook_food( mushrooms, 200, 3 );
 }
 
 int main()
@@ -71,6 +75,7 @@ int main()
 	//Cook Dinner Function
 	std::cout<< "" << std::endl;
 	std::cout<< "Cook Dinner functions" << std::endl;
+	cook_dinner();
 	
 		//Cook dinner will be used to call these functions
 	/*std::cout<< "Cook Steak" << std::endl;
