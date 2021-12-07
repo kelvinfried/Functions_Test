@@ -157,6 +157,12 @@ bool alphabetical( char character_one, char character_two )	//Aim Should return 
 	}
 }
 
+float deg_to_rad( float degree_value )
+{
+	float radian_conversion = 0.01745;
+	return float( degree_value * radian_conversion ); 
+}
+
 
 int main()
 {
@@ -202,10 +208,10 @@ int main()
 		//Testing function
 	alphabetical( 'a', 'b' );
 	
-	std::cout<< "If a and b are alphabetical " << alphabetical( 'a', 'b' ) << std::endl << "it will return 1." << std::endl; //Had to ammend the values for boolean values returned as I has mistaken that 0 was true and 1 was true.// ammended
-	std::cout<< "If v and a are alphabetical " << alphabetical( 'v', 'a' ) << std::endl << "it will return 1." << std::endl; 
+	//std::cout<< "If a and b are alphabetical " << alphabetical( 'a', 'b' ) << std::endl << "it will return 1." << std::endl; //Had to ammend the values for boolean values returned as I has mistaken that 0 was true and 1 was true.// ammended
+	//std::cout<< "If v and a are alphabetical " << alphabetical( 'v', 'a' ) << std::endl << "it will return 1." << std::endl; 
 		//Whne equal
-	std::cout<< "If a and a are alphabetical " << alphabetical( 'a', 'a' ) << std::endl << "it will return 1." << std::endl; //As expected returns false
+	//std::cout<< "If a and a are alphabetical " << alphabetical( 'a', 'a' ) << std::endl << "it will return 1." << std::endl; //As expected returns false
 	
 	
 	
