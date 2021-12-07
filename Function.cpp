@@ -112,7 +112,7 @@ void say_hello( int num_time, char initial )	//Adding in another attribute  for 
 void spawn_player( std::string name, float x_coorodinate, float y_coorodinate, float z_coordinate )
 {
 	std::cout<< "The player's name is " << name << ", you have spawned at" ;
-	std::cout<< "( " << x_coorodinate << ", " << y_coorodinate << ", " << z_coordinate << std::endl;
+	std::cout<< "( " << x_coorodinate << ", " << y_coorodinate << ", " << z_coordinate << " )" << std::endl;
 }
 
 int main()
