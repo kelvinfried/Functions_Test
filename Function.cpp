@@ -74,7 +74,7 @@ int main()
 	
 	//Cook Dinner Function
 	std::cout<< "" << std::endl;
-	std::cout<< "Cook Dinner functions" << std::endl;
+	//std::cout<< "Cook Dinner functions" << std::endl;
 	cook_dinner();
 	
 		//Cook dinner will be used to call these functions
