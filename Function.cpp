@@ -133,7 +133,9 @@ int main()
 		//Write a function called sayhello()
 	//say_hello();	//Testing that the function works
 	//say_hello( 1 );	//Now needs to be ammeneded so the parameter is passed into the function
-	say_hello( 2, 'K' );	//Now needs to be ammeneded so the parameter is passed into the function
+	//say_hello( 2, 'K' );	//Now needs to be ammeneded so the parameter is passed into the function
+	
+	//Step 5
 	
 	
 	
