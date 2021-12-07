@@ -19,6 +19,12 @@ void prepair_food( )
 	std::cout<< "You need a frying pan, oil and salt. << std::endl << "Now oil up the pan" << std::endl;
 }
 
+	//Finish food
+void finish_food( )
+{
+	std::cout<< "Now take the food out and serve it on a plate" << std::endl;
+}
+
 void cook_dinner()
 {
 	std::cout<< "" << std::endl;
