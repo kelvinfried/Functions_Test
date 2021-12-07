@@ -163,6 +163,8 @@ int main()
 	//spawn_all_players();	//Now to test the output of the spawn all players function
 	start_game();
 	
+	//Steps 6
+	
 	
 	
 	return 0;
