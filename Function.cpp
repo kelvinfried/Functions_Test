@@ -90,8 +90,9 @@ void fire_until_empty()	//Uses the above functions to creat a sudo gun firing cy
 	
 	std::cout<< "Enemy spotted!" << std::endl;
 	
-	for( int x = ammo_value; x > ammo_value; x-- )
+	for( int x = 0; x < ammo_value; x++ )
 	{
+		std::cout<< x;
 		fire_bullet();
 	}
 	
