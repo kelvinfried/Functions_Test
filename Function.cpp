@@ -66,6 +66,23 @@ void cook_dinner()
 	cook_food( "mushrooms", 200, 3 );
 }
 
+//Step 2 functions
+void fire_bullet()
+{
+	std::cout<< "Bullet fired" << std::endl;
+}
+
+void reload()
+{
+	std::cout<< "Take out a new magazine from your backpack" << std::endl;
+	std::cout<< "Put the new magazine in your gun" << std::endl;
+}
+
+void out_of_bullets()
+{
+	std::cout<< "You can no longer fire" << std::endl;
+}
+
 int main()
 {
 	//impliment 5 functions based on recipies 
@@ -77,11 +94,14 @@ int main()
 	//std::cout<< "Cook Dinner functions" << std::endl;
 	cook_dinner();
 	
-		//Cook dinner will be used to call these functions
-	/*std::cout<< "Cook Steak" << std::endl;
+		/*//Cook dinner will be used to call these functions
+	std::cout<< "Cook Steak" << std::endl;
 	std::cout<< "Cook Omelette" << std::endl;
 	std::cout<< "Cook Mushrooms" << std::endl;
 	std::cout<< "Cook Peas" << std::endl;*/
+	
+	//Step 2	
+		//Write a function called firebullet.
 	
 	return 0;
 }
