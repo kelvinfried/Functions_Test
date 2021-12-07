@@ -100,9 +100,12 @@ void fire_until_empty()	//Uses the above functions to creat a sudo gun firing cy
 }
 
 
-void say_hello( int num_time )
+void say_hello( int num_time, char initial )	//Adding in another attribute  for the function
 {
-	std::cout<< "hello" << std::endl;
+	for( int x = 0; x < num_time; x++ )
+	{
+		std::cout<< "hello, Mr/Mrs " << initial << std::e6ndl;
+	}
 }
 
 int main()
