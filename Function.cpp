@@ -163,7 +163,7 @@ float deg_to_rad( float degree_value )
 	return float( degree_value * radian_conversion ); 
 }
 
-class player()	//Step 9 player class
+class player	//Step 9 player class
 {
 	public:
 		float x;
@@ -180,7 +180,7 @@ class player()	//Step 9 player class
 		}
 };
 
-class game()
+class game
 {
 	public:
 		player player[4];
