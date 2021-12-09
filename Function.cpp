@@ -282,7 +282,7 @@ int main()
 			//Attempt to access the values
 	game game1;
 		//Attempting to access game1 attributes;
-	std::cout<< "Player 0's x poistion is " << game1.player[ 0 ].x << std::endl;
+	std::cout<< "Player 0's x poistion is " << game1.player[ 0 ].x << std::endl;		//Output section
 	std::cout<< "Player 0's x poistion is " << game1.player[ 1 ].speed << std::endl;
 	std::cout<< "Player 0's x poistion is " << game1.player[ 2 ].rotation << std::endl;
 	std::cout<< "Player 0's x poistion is " << game1.player[ 3 ].y << std::endl;
