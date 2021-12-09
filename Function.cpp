@@ -218,6 +218,12 @@ class game
 	}
 };
 
+void display_game_state( game game_state )
+{
+	std::cout<< "Player 0 has: " << game_state.player[ 0 ].x << ", " << game_state.player[ 0 ].y << ", " << game_state.player[ 0 ];
+	std::cout<< " with a rotation of " << game_state.player[ 0 ].rotation << " and a speed of " << game_state.player[ 0 ].speed << std::endl;
+}
+
 
 int main()
 {
@@ -286,6 +292,12 @@ int main()
 	std::cout<< "Player 1's speed poistion is " << game1.player[ 1 ].speed << std::endl;
 	std::cout<< "Player 2's rotation poistion is " << game1.player[ 2 ].rotation << std::endl;
 	std::cout<< "Player 3's y poistion is " << game1.player[ 3 ].y << std::endl;
+	
+	//Step 11
+		//Function display Game State and pass in the game class as an attribute.
+			//Function will not return anything
+			//It will print out each of the players vairables
+			
 	
 	return 0;
 }
