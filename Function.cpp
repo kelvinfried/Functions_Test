@@ -218,7 +218,7 @@ class game
 	}
 };
 
-void display_game_state( game game_state )
+void display_game_state( game game_state )	//Defining the needed function
 {
 	std::cout<< "Player 0 has: " << game_state.player[ 0 ].x << ", " << game_state.player[ 0 ].y << ", " << game_state.player[ 0 ];
 	std::cout<< " with a rotation of " << game_state.player[ 0 ].rotation << " and a speed of " << game_state.player[ 0 ].speed << std::endl;
