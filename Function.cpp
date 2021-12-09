@@ -163,7 +163,7 @@ float deg_to_rad( float degree_value )
 	return float( degree_value * radian_conversion ); 
 }
 
-class Player()	//Step 9 player class
+class player()	//Step 9 player class
 {
 	public:
 		float x;
@@ -171,7 +171,7 @@ class Player()	//Step 9 player class
 		float rotation;
 		float speed;
 		
-		Player()	//Constructor settign default values.
+		player()	//Constructor settign default values.
 		{
 			x = 0.0f;
 			y = 0.0f;
@@ -180,7 +180,43 @@ class Player()	//Step 9 player class
 		}
 };
 
-class 
+class game()
+{
+	public:
+		player player[4];
+		
+	//Constructor over writes player values: x, y, speed values and rotation
+		//X and y from -10.0 to 10.0
+		//Speed from range 0 to 1.0
+		//rotation from 0 to 360.
+	game()
+	{
+		//Player 0 - 3 will be setup here.
+			//Player 0
+		player[ 0 ].x = -10.0f;
+		player[ 0 ].y = -10.0f;
+		player[ 0 ].rotation = 0.0f;
+		player[ 0 ].speed = 0.0f;
+		
+			//Player 1
+		player[ 1 ].x = -5.0f;
+		player[ 1 ].y = -5.0f;
+		player[ 1 ].rotation = 90.0f;
+		player[ 1 ].speed = 0.0f;
+		
+			//Player 2
+		player[ 2 ].x = 0.0f;
+		player[ 2 ].y = 0.0f;
+		player[ 2 ].rotation = 180.0f;
+		player[ 2 ].speed = 0.0f
+		
+			//Player 3
+		player[ 3 ].x = 5.0f;
+		player[ 3 ].y = 5.0f;
+		player[ 3 ].rotation = 270.0f;
+		player[ 3 ].speed = 0.0f;
+	}
+};
 
 
 int main()
