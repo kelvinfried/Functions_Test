@@ -318,6 +318,13 @@ int main()
 			//Function will not return anything
 			//It will print out each of the players vairables
 	display_game_state( game1 );
+	
+	//Step 12
+		//Function called reset health
+			//Does not return anything, accepts a int called n. Then set the value to be 100.
+			//In main, make a health vairable set to 0.
+				//Pass reset health into here as normal.
+				//Then pass it in by referance using an & sign.
 			
 	
 	return 0;
