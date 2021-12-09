@@ -221,19 +221,19 @@ class game
 void display_game_state( game game_state )	//Defining the needed function
 {
 	//Player 0
-	std::cout<< "Player 0 has: " << game_state.player[ 0 ].x << ", " << game_state.player[ 0 ].y << ", " << game_state.player[ 0 ];
+	std::cout<< "Player 0 has: " << game_state.player[ 0 ].x << ", " << game_state.player[ 0 ].y << ", ";
 	std::cout<< " with a rotation of " << game_state.player[ 0 ].rotation << " and a speed of " << game_state.player[ 0 ].speed << std::endl;
 	
 	//Player 1
-	std::cout<< "Player 0 has: " << game_state.player[ 1 ].x << ", " << game_state.player[ 1 ].y << ", " << game_state.player[ 1 ];
+	std::cout<< "Player 1 has: " << game_state.player[ 1 ].x << ", " << game_state.player[ 1 ].y << ", ";
 	std::cout<< " with a rotation of " << game_state.player[ 1 ].rotation << " and a speed of " << game_state.player[ 1 ].speed << std::endl;
 	
 	//Player 2
-	std::cout<< "Player 0 has: " << game_state.player[ 2 ].x << ", " << game_state.player[ 2 ].y << ", " << game_state.player[ 2 ];
+	std::cout<< "Player 2 has: " << game_state.player[ 2 ].x << ", " << game_state.player[ 2 ].y << ", ";
 	std::cout<< " with a rotation of " << game_state.player[ 2 ].rotation << " and a speed of " << game_state.player[ 2 ].speed << std::endl;
 	
 	//Player 3
-	std::cout<< "Player 0 has: " << game_state.player[ 3 ].x << ", " << game_state.player[ 3 ].y << ", " << game_state.player[ 3 ];
+	std::cout<< "Player 3 has: " << game_state.player[ 3 ].x << ", " << game_state.player[ 3 ].y << ", ";
 	std::cout<< " with a rotation of " << game_state.player[ 3 ].rotation << " and a speed of " << game_state.player[ 3 ].speed << std::endl;
 }
 
