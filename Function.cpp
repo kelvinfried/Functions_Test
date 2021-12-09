@@ -277,6 +277,9 @@ int main()
 		//Writes a class for a player	-Float for x:y, rotation and speed.
 			//Set up a constructor too
 		//Create a game class with 4 player objects 
+	//Step 10
+		//Init a game object and call it game 1.
+			//Attempt to access the values
 	
 	return 0;
 }
