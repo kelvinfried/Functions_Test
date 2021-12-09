@@ -308,15 +308,16 @@ int main()
 			//Attempt to access the values
 	game game1;
 		//Attempting to access game1 attributes;
-	std::cout<< "Player 0's x poistion is " << game1.player[ 0 ].x << std::endl;		//Output section
+	/*std::cout<< "Player 0's x poistion is " << game1.player[ 0 ].x << std::endl;		//Output section
 	std::cout<< "Player 1's speed poistion is " << game1.player[ 1 ].speed << std::endl;
 	std::cout<< "Player 2's rotation poistion is " << game1.player[ 2 ].rotation << std::endl;
-	std::cout<< "Player 3's y poistion is " << game1.player[ 3 ].y << std::endl;
+	std::cout<< "Player 3's y poistion is " << game1.player[ 3 ].y << std::endl;*/
 	
 	//Step 11
 		//Function display Game State and pass in the game class as an attribute.
 			//Function will not return anything
 			//It will print out each of the players vairables
+	display_game_state( game1 );
 			
 	
 	return 0;
