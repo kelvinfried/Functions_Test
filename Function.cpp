@@ -280,6 +280,9 @@ int main()
 	//Step 10
 		//Init a game object and call it game 1.
 			//Attempt to access the values
+	game game1;
+		//Attempting to access game1 attributes;
+	std::cout<< "Player 0's x poistion is " << game1.player[ 0 ].x << std::endl;
 	
 	return 0;
 }
