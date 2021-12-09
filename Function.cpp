@@ -237,7 +237,7 @@ void display_game_state( game game_state )	//Defining the needed function
 	std::cout<< "Player 3 has: " << game_state.player[ 3 ].x << ", " << game_state.player[ 3 ].y << ", ";
 	std::cout<< " with a rotation of " << game_state.player[ 3 ].rotation << " and a speed of " << game_state.player[ 3 ].speed << std::endl;*/	//Now to do this with iteration
 	
-	for( int itr = 0; x < 4; itr ++ )
+	for( int itr = 0; itr < 4; itr ++ )
 	{
 		std::cout<< "Player " << itr << " has: " << game_state.player[ itr ].x << ", " << game_state.player[ itr ].y << ", ";
 		std::cout<< " with a rotation of " << game_state.player[ itr ].rotation << " and a speed of " << game_state.player[ itr ].speed << std::endl;
