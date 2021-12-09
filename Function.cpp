@@ -163,6 +163,25 @@ float deg_to_rad( float degree_value )
 	return float( degree_value * radian_conversion ); 
 }
 
+class Player()	//Step 9 player class
+{
+	public:
+		float x;
+		float y;
+		float rotation;
+		float speed;
+		
+		Player()	//Constructor settign default values.
+		{
+			x = 0.0f;
+			y = 0.0f;
+			rotation = 0.0f;
+			speed = 0.0f;
+		}
+};
+
+class 
+
 
 int main()
 {
@@ -219,6 +238,9 @@ int main()
 	//std::cout<< "The first value is 120' and it's radiant is " << deg_to_rad( 120.0f ) << std::endl;	//working fine
 	
 	//Step 9
+		//Writes a class for a player	-Float for x:y, rotation and speed.
+			//Set up a constructor too
+		//Create a game class with 4 player objects 
 	
 	return 0;
 }
