@@ -422,7 +422,7 @@ int main()
 		set_to_grey_ref( color_class_1.green );
 	//Output
 	std::cout<< "" << std::endl << "After second pass." <<std::endl;
-	output_colour( color_class_1 );
+	output_colour( color_class_1 );	//Working as expected 
 
 			
 	
