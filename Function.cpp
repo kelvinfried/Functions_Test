@@ -1,5 +1,6 @@
 //Function testing
 #include <iostream>
+#include <math.h>	//For step 15
 
 //Program Functions
 	//Used for cooking food items, you pass in data to the attributes
@@ -291,7 +292,7 @@ void output_colour( color color_passed )	//East of outputting colours
 	std::cout<< "The blue value is " << color_passed.blue << std::endl;
 }
 
-//Step 14
+//Step 15
 
 
 int main()
@@ -426,8 +427,12 @@ int main()
 	//Output
 	std::cout<< "" << std::endl << "After second pass." <<std::endl;
 	output_colour( color_class_1 );	//Working as expected	*/
-
-			
+	
+	//Step 15
+		//Function that takes the game data and updates the position of the 4 players based on their current speed and rotation
+			//To get the movements to be accurate I will have to use pythagoras therom to find out exactly how much the player moves based on their angle and speed
+			//Use display game state to show a before and after the speed was applied to the base x and y values.
+			//Wrte it so it updates until exited, ie player presses E for escape
 	
 	return 0;
 }
