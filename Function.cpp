@@ -252,6 +252,23 @@ void reset_health( int &n )
 	n = 100;	//Removed redundant declairation
 }
 
+//Step 13
+class color()
+{
+	public:
+		int red;
+		int green;
+		int blue;
+		int alpha;
+		
+		color()
+		{
+			red = 0;
+			green = 0;
+			blue = 0;
+			aplha = 0;
+		}
+};
 
 int main()
 {
