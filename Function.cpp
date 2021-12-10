@@ -308,6 +308,35 @@ void applying_speed_y( float &position, float rotation, float speed )
 	position += speed * cos( radiant_value );
 }
 
+void out_of_range_adjust( float &x_position, float &y_position )
+{
+	const float OUT_OF_RANGE_POSITIVE = 10.0f;
+	const float OUT_OF_RANGE_NEGATIVE = -10.0f;
+	const float REST_VALUE = 0.0f;
+	
+	//X Value
+	if( ( x_position > OUT_OF_RANGE_POSITIVE ) || ( x_position < OUT_OF_RANGE_NEGATIVE ) )
+	{
+		x_position = 0.0f;
+	}
+	
+	else
+	{
+		;	//Nothing pass
+	}
+	
+	//Y Value
+	if( ( y_position > OUT_OF_RANGE_POSITIVE ) || ( y_position < OUT_OF_RANGE_NEGATIVE ) )
+	{
+		y_position = 0.0f;
+	}
+	
+	else
+	{
+		;	//Nothing pass
+	}
+}
+
 
 int main()
 {
@@ -448,8 +477,11 @@ int main()
 			//Use display game state to show a before and after the speed was applied to the base x and y values.
 			//Wrte it so it updates until exited, ie player presses E for escape */
 	game game1;
+	char player_input = 'e';
 	
-	display_game_state( game1 );
+	//Used for looping until the user defines it
+	
+	/*display_game_state( game1 );
 	std::cout << "" << std::endl;
 	
 	for( int itr = 0; itr < 4; itr ++ )	//Ammended this to 4
@@ -461,7 +493,17 @@ int main()
 	
 	std::cout<< "" << std::endl;
 	display_game_state( game1 );
-	std::cout << "" << std::endl;
+	std::cout << "" << std::endl;*/	//Now that I know it works time to impliment the other steps
+	
+	//Main Loop
+	while( player_input != 'e' )
+	{
+		//Adjustment code first
+		for( int itr = 0; itr < 4; itr ++ )
+		{
+			out_of_range_adjust( game1.player[ itr ].x, game1.player[ itr ].y );
+		}
+	}
 	
 	return 0;
 }
