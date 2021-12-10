@@ -477,7 +477,7 @@ int main()
 			//Use display game state to show a before and after the speed was applied to the base x and y values.
 			//Wrte it so it updates until exited, ie player presses E for escape */
 	game game1;
-	char player_input = 'e';
+	char player_input = 'w';	//Used to store the value the player inputs to check it against the looping condition
 	
 	//Used for looping until the user defines it
 	
@@ -498,6 +498,7 @@ int main()
 	//Main Loop
 	while( player_input != 'e' )
 	{
+		std::cout<< "Start of loop" <<std::endl;
 		//Adjustment code first
 		for( int itr = 0; itr < 4; itr ++ )
 		{
