@@ -382,7 +382,7 @@ int main()
 	//reset_health( health );	//You assign the pointer in the function declairation, not when passing in an arguement
 	//std::cout<< "After passing the health function by referance " << health <<std::endl;	//Not needed	*/
 	
-	//Step 13
+	/* //Step 13
 		//Class called colour, cotains ints for: Red, green, blue, alpha
 			//Const sets 3 values to 0, others to 255.
 		//Create an object 1, then check the values.
@@ -422,7 +422,7 @@ int main()
 		set_to_grey_ref( color_class_1.green );
 	//Output
 	std::cout<< "" << std::endl << "After second pass." <<std::endl;
-	output_colour( color_class_1 );	//Working as expected 
+	output_colour( color_class_1 );	//Working as expected	*/
 
 			
 	
