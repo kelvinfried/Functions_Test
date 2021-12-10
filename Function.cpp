@@ -270,6 +270,25 @@ class color()
 		}
 };
 
+void set_to_grey( int n)	//N is one color parameter passed in from the class.
+{
+	int grey = 128;
+	
+}
+
+void set_to_grey_ref( int &n )
+{
+	int grey = 128;
+}
+
+void output_colour( color color_passed )	//East of outputting colours
+{
+	std::cout<< "" << std::endl;
+	std::cout<< "The red value is " << color_passed.red << std::endl;
+	std::cout<< "The green value is " << color_passed.green << std::endl;
+	std::cout<< "The blue value is " << color_passed.blue << std::endl;
+}
+
 int main()
 {
 	//impliment 5 functions based on recipies 
@@ -368,6 +387,14 @@ int main()
 				//Set RGB values to 128.
 				//Pass n by referance
 				//Then try passing by value.
+	//Class init
+	color colour_class;
+	//Testing without referance.
+		//Red
+		
+		//Green
+		//Blue
+
 			
 	
 	return 0;
