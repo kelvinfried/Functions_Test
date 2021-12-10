@@ -253,7 +253,7 @@ void reset_health( int &n )
 }
 
 //Step 13
-class color()
+class color
 {
 	public:
 		int red;
@@ -331,7 +331,7 @@ int main()
 	
 	//Step 7
 		//Testing function
-	alphabetical( 'a', 'b' );
+	//alphabetical( 'a', 'b' );
 	
 	//std::cout<< "If a and b are alphabetical " << alphabetical( 'a', 'b' ) << std::endl << "it will return 1." << std::endl; //Had to ammend the values for boolean values returned as I has mistaken that 0 was true and 1 was true.// ammended
 	//std::cout<< "If v and a are alphabetical " << alphabetical( 'v', 'a' ) << std::endl << "it will return 1." << std::endl; 
@@ -389,6 +389,10 @@ int main()
 				//Then try passing by value.
 	//Class init
 	color colour_class;
+	
+	//Output
+	output_colour( colour_class );
+	
 	//Testing without referance.
 		//Red
 		
