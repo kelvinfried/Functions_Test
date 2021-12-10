@@ -298,14 +298,14 @@ void applying_speed_x( float &position, float rotation, float speed )
 	//Calls to convert vaue to radiants
 	float radiant_value = deg_to_rad( rotation );
 	
-	position = speed * sin( radiant_value );
+	position += speed * sin( radiant_value );
 }
 
 void applying_speed_y( float &position, float rotation, float speed )
 {
 	float radiant_value = deg_to_rad( rotation );
 	
-	position = speed * cos( radiant_value );
+	position += speed * cos( radiant_value );
 }
 
 
@@ -452,11 +452,16 @@ int main()
 	display_game_state( game1 );
 	std::cout << "" << std::endl;
 	
-	for( int itr = 0; itr < 3; itr ++ )
+	for( int itr = 0; itr < 4; itr ++ )	//Ammended this to 4
 	{
+		std::cout<< itr << std::endl;
 		applying_speed_x( game1.player[ itr ].x, game1.player[ itr ].rotation, game1.player[ itr ].speed );
 		applying_speed_y( game1.player[ itr ].y, game1.player[ itr ].rotation, game1.player[ itr ].speed );
 	}
+	
+	std::cout<< "" << std::endl;
+	display_game_state( game1 );
+	std::cout << "" << std::endl;
 	
 	return 0;
 }
