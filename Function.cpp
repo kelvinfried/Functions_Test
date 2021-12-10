@@ -293,6 +293,20 @@ void output_colour( color color_passed )	//East of outputting colours
 }
 
 //Step 15
+void applying_speed_x( float &position, float rotation, float speed )
+{
+	//Calls to convert vaue to radiants
+	float radiant_value = deg_to_rad( rotation );
+	
+	position = speed * sin( radiant_value );
+}
+
+void applying_speed_y( &position, float rotation, float speed )
+{
+	float radiant_value = deg_to_rad( rotation );
+	
+	position = speed * cos( radiant_value );
+}
 
 
 int main()
