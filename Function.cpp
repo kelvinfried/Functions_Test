@@ -250,8 +250,6 @@ void display_game_state( game game_state )	//Defining the needed function
 void reset_health( int n )
 {
 	int n = 100;
-	
-	health = 100;
 }
 
 
