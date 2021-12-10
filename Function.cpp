@@ -505,7 +505,25 @@ int main()
 		}
 		
 		//Initial print out.
+		std::cout<< "" << std::endl;
+		display_game_state( game1 );	//Prints out the player stats
 		
+		//Apply movements
+		for( int itr = 0; itr < 4; itr ++ )
+		{
+			applying_speed_x( game1.player[ itr ].x, game1.player[ itr ].rotation, game1.player[ itr ].speed );
+			applying_speed_y( game1.player[ itr ].y, game1.player[ itr ].rotation, game1.player[ itr ].speed );
+		}
+		
+		//Second print out.
+		std::cout<< "" << std::endl;
+		display_game_state( game1 );	//Prints out the player stats
+		
+	//Player input
+		std::cout<< "Do you wish to carry on with the program, if so please press any character then enter." << std::endl;
+		std::cout<< "If not press 'e' then enter." << std::endl;
+		
+		std::cin>> player_input;	//Assigns the input.
 	}
 	
 	return 0;
