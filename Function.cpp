@@ -369,14 +369,14 @@ int main()
 			//In main, make a health vairable set to 0.
 				//Pass reset health into here as normal.
 				//Then pass it in by referance using an & sign.
-	int health = 0;
+	//int health = 0;
 	
-	std::cout<< "The health value is currently " << health << std::endl;
-	reset_health( health );
+	//std::cout<< "The health value is currently " << health << std::endl;
+	//reset_health( health );
 	
-	std::cout<< "After the health function " << health << std::endl;
+	//std::cout<< "After the health function " << health << std::endl;
 	
-	reset_health( health );	//You assign the pointer in the function declairation, not when passing in an arguement
+	//reset_health( health );	//You assign the pointer in the function declairation, not when passing in an arguement
 	//std::cout<< "After passing the health function by referance " << health <<std::endl;	//Not needed
 	
 	//Step 13
