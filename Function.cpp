@@ -247,7 +247,7 @@ void display_game_state( game game_state )	//Defining the needed function
 }
 
 //Step 12
-void reset_health( int health )
+void reset_health( int n )
 {
 	int n = 100;
 	
