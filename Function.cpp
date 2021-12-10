@@ -301,7 +301,7 @@ void applying_speed_x( float &position, float rotation, float speed )
 	position = speed * sin( radiant_value );
 }
 
-void applying_speed_y( &position, float rotation, float speed )
+void applying_speed_y( float &position, float rotation, float speed )
 {
 	float radiant_value = deg_to_rad( rotation );
 	
@@ -442,11 +442,14 @@ int main()
 	std::cout<< "" << std::endl << "After second pass." <<std::endl;
 	output_colour( color_class_1 );	//Working as expected	*/
 	
-	//Step 15
+	/* //Step 15
 		//Function that takes the game data and updates the position of the 4 players based on their current speed and rotation
 			//To get the movements to be accurate I will have to use pythagoras therom to find out exactly how much the player moves based on their angle and speed
 			//Use display game state to show a before and after the speed was applied to the base x and y values.
-			//Wrte it so it updates until exited, ie player presses E for escape
+			//Wrte it so it updates until exited, ie player presses E for escape */
+	game game1;
+	
+	display_game_state( game1 );
 	
 	return 0;
 }
