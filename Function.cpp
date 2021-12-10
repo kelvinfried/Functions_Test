@@ -274,11 +274,14 @@ void set_to_grey( int n)	//N is one color parameter passed in from the class.
 {
 	int grey = 128;
 	
+	n = grey;
 }
 
-void set_to_grey_ref( int &n )
+void set_to_grey_ref( int &n )	//Passed by referance here, will actually change the values
 {
 	int grey = 128;
+	
+	n = grey;
 }
 
 void output_colour( color color_passed )	//East of outputting colours
@@ -412,11 +415,11 @@ int main()
 	output_colour( color_class_1 );
 	//Testing without referance.
 		//Red
-		set_to_grey( color_class_1.red );
+		set_to_grey_ref( color_class_1.red );
 		//Green
-		set_to_grey( color_class_1.blue );
+		set_to_grey_ref( color_class_1.blue );
 		//Blue
-		set_to_grey( color_class_1.green );
+		set_to_grey_ref( color_class_1.green );
 	//Output
 	std::cout<< "" << std::endl << "After second pass." <<std::endl;
 	output_colour( color_class_1 );
