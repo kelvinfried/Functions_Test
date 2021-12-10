@@ -312,12 +312,12 @@ void out_of_range_adjust( float &x_position, float &y_position )
 {
 	const float OUT_OF_RANGE_POSITIVE = 10.0f;
 	const float OUT_OF_RANGE_NEGATIVE = -10.0f;
-	const float REST_VALUE = 0.0f;
+	const float RESET_VALUE = 0.0f;
 	
 	//X Value
 	if( ( x_position > OUT_OF_RANGE_POSITIVE ) || ( x_position < OUT_OF_RANGE_NEGATIVE ) )
 	{
-		x_position = 0.0f;
+		x_position = RESET_VALUE;
 	}
 	
 	else
@@ -328,7 +328,7 @@ void out_of_range_adjust( float &x_position, float &y_position )
 	//Y Value
 	if( ( y_position > OUT_OF_RANGE_POSITIVE ) || ( y_position < OUT_OF_RANGE_NEGATIVE ) )
 	{
-		y_position = 0.0f;
+		y_position = RESET_VALUE;
 	}
 	
 	else
@@ -501,8 +501,11 @@ int main()
 		//Adjustment code first
 		for( int itr = 0; itr < 4; itr ++ )
 		{
-			out_of_range_adjust( game1.player[ itr ].x, game1.player[ itr ].y );
+			out_of_range_adjust( game1.player[ itr ].x, game1.player[ itr ].y );	//Error checking, ensure values are within the correct range.
 		}
+		
+		//Initial print out.
+		
 	}
 	
 	return 0;
