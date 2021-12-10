@@ -291,6 +291,9 @@ void output_colour( color color_passed )	//East of outputting colours
 	std::cout<< "The blue value is " << color_passed.blue << std::endl;
 }
 
+//Step 14
+
+
 int main()
 {
 	//impliment 5 functions based on recipies 
