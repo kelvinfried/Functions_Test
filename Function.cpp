@@ -247,9 +247,9 @@ void display_game_state( game game_state )	//Defining the needed function
 }
 
 //Step 12
-void reset_health( int n )
+void reset_health( int &n )
 {
-	int n = 100;
+	n = 100;	//Removed redundant declairation
 }
 
 
@@ -341,9 +341,9 @@ int main()
 	
 	std::cout<< "After the health function " << health << std::endl;
 	
-	reset_health( &health );
+	reset_health( health );	//You assign the pointer in the function declairation, not when passing in an arguement
 	
-	std::cout<< "After passing the health function by referance " << health <<std::endl;
+	//std::cout<< "After passing the health function by referance " << health <<std::endl;	//Not needed
 			
 	
 	return 0;
