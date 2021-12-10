@@ -336,14 +336,21 @@ int main()
 	int health = 0;
 	
 	std::cout<< "The health value is currently " << health << std::endl;
-	
 	reset_health( health );
 	
 	std::cout<< "After the health function " << health << std::endl;
 	
 	reset_health( health );	//You assign the pointer in the function declairation, not when passing in an arguement
-	
 	//std::cout<< "After passing the health function by referance " << health <<std::endl;	//Not needed
+	
+	//Step 13
+		//Class called colour, cotains ints for: Red, green, blue, alpha
+			//Const sets 3 values to 0, others to 255.
+		//Create an object 1, then check the values.
+			//New function called "set_to_grey". Void functuon, and accepts a single parameters called 'n'.
+				//Set RGB values to 128.
+				//Pass n by referance
+				//Then try passing by value.
 			
 	
 	return 0;
