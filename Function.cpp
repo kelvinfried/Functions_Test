@@ -163,6 +163,7 @@ float deg_to_rad( float degree_value )
 	return float( degree_value * radian_conversion ); 
 }
 
+//Step 10
 class player	//Step 9 player class
 {
 	public:
@@ -218,6 +219,7 @@ class game
 	}
 };
 
+//Step 11 
 void display_game_state( game game_state )	//Defining the needed function
 {
 	/*
@@ -242,6 +244,14 @@ void display_game_state( game game_state )	//Defining the needed function
 		std::cout<< "Player " << itr << " has: " << game_state.player[ itr ].x << ", " << game_state.player[ itr ].y << ", ";
 		std::cout<< " with a rotation of " << game_state.player[ itr ].rotation << " and a speed of " << game_state.player[ itr ].speed << std::endl;
 	}
+}
+
+//Step 12
+void reset_health( int health )
+{
+	int n = 100;
+	
+	health = 100;
 }
 
 
@@ -317,7 +327,7 @@ int main()
 		//Function display Game State and pass in the game class as an attribute.
 			//Function will not return anything
 			//It will print out each of the players vairables
-	display_game_state( game1 );
+	//display_game_state( game1 );
 	
 	//Step 12
 		//Function called reset health
@@ -325,6 +335,17 @@ int main()
 			//In main, make a health vairable set to 0.
 				//Pass reset health into here as normal.
 				//Then pass it in by referance using an & sign.
+	int health = 0;
+	
+	std::cout<< "The health value is currently " << health << std::endl;
+	
+	reset_health( health );
+	
+	std::cout<< "After the health function " << health << std::endl;
+	
+	reset_health( &health );
+	
+	std::cout<< "After passing the health function by referance " << health <<std::endl;
 			
 	
 	return 0;
