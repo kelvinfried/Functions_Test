@@ -283,7 +283,6 @@ void set_to_grey_ref( int &n )
 
 void output_colour( color color_passed )	//East of outputting colours
 {
-	std::cout<< "" << std::endl;
 	std::cout<< "The red value is " << color_passed.red << std::endl;
 	std::cout<< "The green value is " << color_passed.green << std::endl;
 	std::cout<< "The blue value is " << color_passed.blue << std::endl;
@@ -389,16 +388,38 @@ int main()
 				//Pass n by referance
 				//Then try passing by value.
 	//Class init
-	color colour_class;
+	color color_class;
 	
 	//Output
-	output_colour( colour_class );
-	
+	std::cout<< "First set, before." << std::endl;
+	output_colour( color_class );
 	//Testing without referance.
 		//Red
-		
+		set_to_grey( color_class.red );
 		//Green
+		set_to_grey( color_class.blue );
 		//Blue
+		set_to_grey( color_class.green );
+	//Output
+	std::cout<< "" << std::endl << "After first pass." <<std::endl;
+	output_colour( color_class );	
+
+	std::cout<< "" << std::endl;
+
+	color color_class_1;
+	//Testing with referance
+	std::cout<< "Second set, before." << std::endl;
+	output_colour( color_class_1 );
+	//Testing without referance.
+		//Red
+		set_to_grey( color_class_1.red );
+		//Green
+		set_to_grey( color_class_1.blue );
+		//Blue
+		set_to_grey( color_class_1.green );
+	//Output
+	std::cout<< "" << std::endl << "After second pass." <<std::endl;
+	output_colour( color_class_1 );
 
 			
 	
