@@ -295,81 +295,82 @@ int main()
 		//Testing phase
 	//cook_food( "Steak", 240, 5 );
 	
-	//Cook Dinner Function
+	/* //Cook Dinner Function
 	std::cout<< "" << std::endl;
 	//std::cout<< "Cook Dinner functions" << std::endl;
 	//cook_dinner();
 	
-		/*//Cook dinner will be used to call these functions
+		//Cook dinner will be used to call these functions
 	std::cout<< "Cook Steak" << std::endl;
 	std::cout<< "Cook Omelette" << std::endl;
 	std::cout<< "Cook Mushrooms" << std::endl;
-	std::cout<< "Cook Peas" << std::endl;*/
+	std::cout<< "Cook Peas" << std::endl; */
 	
-	//Step 2	
+	/* //Step 2	
 		//Write a function called firebullet.
-	//fire_until_empty();	//Step 3- From here
+	//fire_until_empty();	//Step 3- From here */
 	
-	//Step 4
-		//Write a function called sayhello()
+	/* //Step 4 
+		//Write a function called sayhello() 
 	//say_hello();	//Testing that the function works
 	//say_hello( 1 );	//Now needs to be ammeneded so the parameter is passed into the function
-	//say_hello( 2, 'K' );	//Now needs to be ammeneded so the parameter is passed into the function
+	//say_hello( 2, 'K' );	//Now needs to be ammeneded so the parameter is passed into the function */
 	
-	//Step 5
+	/* //Step 5
 	//spawn_player( "Default Name", 0.0f, 0.0f, 0.0f );
 	//spawn_all_players();	//Now to test the output of the spawn all players function
-	//start_game();
+	//start_game(); */
 	
-	//Step 6
-		//Testing function
+	/* //Step 6 
+		//Testing function 
 	//higher_than_ten( 10 );	//Should be less than 10
 		//Outputting the value of the boolean value to see if it was true ( 1 ) or false ( 0 )	//Amded this
 	//std::cout<< "The value returned is " << higher_than_ten( 10 ) << std::endl;	//As expected returns false as it is not more than 10, but equal
 	
-	//std::cout<< "The value returned is " << higher_than_ten( 111 ) << std::endl;	//Should be more than 10
+	//std::cout<< "The value returned is " << higher_than_ten( 111 ) << std::endl;	//Should be more than 10 */
 	
-	//Step 7
-		//Testing function
+	/* //Step 7 
+		//Testing function 
 	//alphabetical( 'a', 'b' );
 	
 	//std::cout<< "If a and b are alphabetical " << alphabetical( 'a', 'b' ) << std::endl << "it will return 1." << std::endl; //Had to ammend the values for boolean values returned as I has mistaken that 0 was true and 1 was true.// ammended
 	//std::cout<< "If v and a are alphabetical " << alphabetical( 'v', 'a' ) << std::endl << "it will return 1." << std::endl; 
 		//Whne equal
-	//std::cout<< "If a and a are alphabetical " << alphabetical( 'a', 'a' ) << std::endl << "it will return 1." << std::endl; //As expected returns false
+	//std::cout<< "If a and a are alphabetical " << alphabetical( 'a', 'a' ) << std::endl << "it will return 1." << std::endl; //As expected returns false */
 	
-	//step 8
+	/* //step 8 
 	//std::cout<< "The first value is 0' and it's radiant is " << deg_to_rad( 0.0f ) << std::endl;	//Working fine
 	//std::cout<< "The first value is 30' and it's radiant is " << deg_to_rad( 30.0f ) << std::endl;	//working fine
-	//std::cout<< "The first value is 120' and it's radiant is " << deg_to_rad( 120.0f ) << std::endl;	//working fine
+	//std::cout<< "The first value is 120' and it's radiant is " << deg_to_rad( 120.0f ) << std::endl;	//working fine */
 	
-	//Step 9
+	/* //Step 9 
 		//Writes a class for a player	-Float for x:y, rotation and speed.
 			//Set up a constructor too
-		//Create a game class with 4 player objects 
-	//Step 10
+		//Create a game class with 4 player objects */
+		
+	/* //Step 10 
 		//Init a game object and call it game 1.
 			//Attempt to access the values
 	//game game1;
 		//Attempting to access game1 attributes;
-	/*std::cout<< "Player 0's x poistion is " << game1.player[ 0 ].x << std::endl;		//Output section
+	std::cout<< "Player 0's x poistion is " << game1.player[ 0 ].x << std::endl;		//Output section
 	std::cout<< "Player 1's speed poistion is " << game1.player[ 1 ].speed << std::endl;
 	std::cout<< "Player 2's rotation poistion is " << game1.player[ 2 ].rotation << std::endl;
-	std::cout<< "Player 3's y poistion is " << game1.player[ 3 ].y << std::endl;*/
+	std::cout<< "Player 3's y poistion is " << game1.player[ 3 ].y << std::endl;	*/
 	
-	//Step 11
+	/* //Step 11 
 		//Function display Game State and pass in the game class as an attribute.
 			//Function will not return anything
-			//It will print out each of the players vairables
-	//display_game_state( game1 );
+			//It will print out each of the players vairables 
+	//display_game_state( game1 ); */
 	
-	//Step 12
+	/* //Step 12 
 		//Function called reset health
 			//Does not return anything, accepts a int called n. Then set the value to be 100.
 			//In main, make a health vairable set to 0.
 				//Pass reset health into here as normal.
-				//Then pass it in by referance using an & sign.
-	//int health = 0;
+				//Then pass it in by referance using an & sign. 
+	int health = 0; 
 	
 	//std::cout<< "The health value is currently " << health << std::endl;
 	//reset_health( health );
@@ -377,7 +378,7 @@ int main()
 	//std::cout<< "After the health function " << health << std::endl;
 	
 	//reset_health( health );	//You assign the pointer in the function declairation, not when passing in an arguement
-	//std::cout<< "After passing the health function by referance " << health <<std::endl;	//Not needed
+	//std::cout<< "After passing the health function by referance " << health <<std::endl;	//Not needed	*/
 	
 	//Step 13
 		//Class called colour, cotains ints for: Red, green, blue, alpha
