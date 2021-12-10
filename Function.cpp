@@ -204,19 +204,19 @@ class game
 		player[ 1 ].x = -5.0f;
 		player[ 1 ].y = -5.0f;
 		player[ 1 ].rotation = 90.0f;
-		player[ 1 ].speed = 0.0f;
+		player[ 1 ].speed = 1.0f;
 		
 			//Player 2
 		player[ 2 ].x = 0.0f;
 		player[ 2 ].y = 0.0f;
 		player[ 2 ].rotation = 180.0f;
-		player[ 2 ].speed = 0.0f;
+		player[ 2 ].speed = -2.0f;
 		
 			//Player 3
 		player[ 3 ].x = 5.0f;
 		player[ 3 ].y = 5.0f;
 		player[ 3 ].rotation = 270.0f;
-		player[ 3 ].speed = 0.0f;
+		player[ 3 ].speed = 1.0f;
 	}
 };
 
