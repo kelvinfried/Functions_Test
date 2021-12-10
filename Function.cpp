@@ -450,6 +450,13 @@ int main()
 	game game1;
 	
 	display_game_state( game1 );
+	std::cout << "" << std::endl;
+	
+	for( int itr = 0; itr < 3; itr ++ )
+	{
+		applying_speed_x( game1.player[ itr ].x, game1.player[ itr ].rotation, game1.player[ itr ].speed );
+		applying_speed_y( game1.player[ itr ].y, game1.player[ itr ].rotation, game1.player[ itr ].speed );
+	}
 	
 	return 0;
 }
